@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    position: relative;
+    color: white;
+    background-image: url(../img/prism.png);
+}
+
+header {
+    text-align: center;
+    height: 15vh;
+    padding: .6em;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h2 {
+    display: block;
+    font: 3.2em Oswald, serif;
+}
+
+
+.contact, .projects {
+    position: relative;
+}
+
+.contact {
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.contact h2, .projects h2 {
+    padding-bottom: 0.36em;
+}
+
+.projects {
+    padding: 1em;
+}
+
+.contact ul, .projects ul{
+    list-style-type: disc;
+    list-style: inside;
+    font-size: 1.4em;
+    letter-spacing: .08em;
+}
+
+.contact ul li, .projects ul li {
+    padding: 0.4em;
+    
+}
+
+.contact ul li a, .projects ul li a{
+    color: hsla(217, 60%, 62%, 0.94);
+    cursor: pointer;
+}
+
+.contact ul li a:hover, .projects ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact ul li a:visited, .projects ul li a:visited {
+    color: white;
+ 
+}
+
+/* Adjustments for small screens */
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 20vh;
+        font-size: .85em;
+    }
+    
+    main {
+        padding-top: 2em;
+        width: 100vw;
+        height: 80vh;
+        text-align: start;   
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    .contact ul, .projects ul {
+        text-align: start;
+    } 
+   
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape){
+    header {
+        height: 20vh;
+        font-size: .85em;
+    }
+    
+    main {
+        width: 100vw;
+        
+    }
+    
+    .contact {
+        float: left;
+    }
+    
+    .projects {
+        float: right;
+    }
+    
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+}
